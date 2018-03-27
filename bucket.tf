@@ -5,8 +5,8 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "sebbraun_yet_bucket" {
-  name     = "sebbraun-yet"
-  location = "EU"
+  name          = "sebbraun-yet"
+  location      = "EU"
   force_destroy = "true"
 }
 
@@ -15,4 +15,3 @@ resource "google_storage_bucket_acl" "image-store-acl" {
 
   default_acl = "publicread"
 }
-

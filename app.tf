@@ -1,5 +1,4 @@
-provider "kubernetes" {
-}
+provider "kubernetes" {}
 
 resource "kubernetes_replication_controller" "bookshelf_rc" {
   metadata {
